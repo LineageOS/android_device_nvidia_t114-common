@@ -14,14 +14,12 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t114
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    af.resampler.quality=4
 
-# System properties
-include $(LOCAL_PATH)/system_prop.mk
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.t114.rc \
-    init.tf.rc
-
-$(call inherit-product, device/nvidia/tegra-common/tegra.mk)
+# WiFi
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.interface=wlan0 \
+    ap.interface=wlan0 \
+    persist.wlan.ti.calibrated=0
