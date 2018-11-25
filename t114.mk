@@ -18,6 +18,7 @@ TARGET_TEGRA_VERSION := t114
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.t114.rc
+    init.t114.rc \
+    init.tf.rc
 
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
