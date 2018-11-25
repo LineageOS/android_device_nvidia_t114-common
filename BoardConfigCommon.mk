@@ -25,4 +25,8 @@ TARGET_CPU_VARIANT := cortex-a15
 TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
 
+# Graphics
+SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
+VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
+
 include device/nvidia/tegra-common/BoardConfigTegra.mk
