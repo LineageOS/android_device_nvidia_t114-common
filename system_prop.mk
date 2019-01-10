@@ -18,6 +18,14 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     af.resampler.quality=4
 
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=131072 \
+    ro.hardware.gralloc=gbm \
+    ro.hardware.hwcomposer=drm \
+    gralloc.gbm.device=/dev/dri/renderD129 \
+    hwc.drm.device=/dev/dri/card1
+
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \

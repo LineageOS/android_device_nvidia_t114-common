@@ -24,4 +24,10 @@ PRODUCT_PACKAGES += \
     init.t114.rc \
     init.tf.rc
 
+# Graphics
+PRODUCT_PACKAGES += \
+    hwcomposer.drm \
+    gralloc.gbm \
+    libGLES_mesa
+
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)

@@ -26,7 +26,13 @@ TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
 
 # Graphics
+TARGET_USES_HWC2 := true
+BOARD_USES_DRM_HWCOMPOSER := true
+BOARD_GPU_DRIVERS := grate
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
+
+# Manifest
+DEVICE_MANIFEST_FILE += device/nvidia/t114-common/manifest_drm.xml
 
 include device/nvidia/tegra-common/BoardConfigTegra.mk
