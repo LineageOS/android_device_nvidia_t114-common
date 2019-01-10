@@ -15,6 +15,7 @@
 #
 
 TARGET_TEGRA_VERSION := t114
+TARGET_TEGRA_GPU     ?= drm
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
